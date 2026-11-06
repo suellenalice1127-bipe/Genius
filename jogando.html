@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genius - Jogando</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="jogo">
+    <a class="voltar" href="index.html">← Início</a>
+    <h1>Genius</h1>
+
+    <p id="status" aria-live="polite">Aperte iniciar para jogar</p>
+    <p class="placar">Rodada: <span id="rodada">0</span> · Recorde: <span id="recorde">0</span></p>
+
+    <div class="tabuleiro">
+      <button class="cor verde" data-cor="verde" aria-label="Verde" disabled></button>
+      <button class="cor vermelho" data-cor="vermelho" aria-label="Vermelho" disabled></button>
+      <button class="cor amarelo" data-cor="amarelo" aria-label="Amarelo" disabled></button>
+      <button class="cor azul" data-cor="azul" aria-label="Azul" disabled></button>
+    </div>
+
+    <button id="iniciar" class="botao">Iniciar</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

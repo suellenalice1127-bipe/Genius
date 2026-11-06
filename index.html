@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Genius - Início</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="jogo menu">
+    <h1>Genius</h1>
+    <p class="subtitulo">Repita a sequência de cores</p>
+
+    <!-- Menu principal -->
+    <nav id="menu-principal" class="menu-botoes">
+      <a class="botao" href="jogando.html">Jogar</a>
+      <button class="botao secundario" data-abrir="configuracoes">Configurações</button>
+      <button class="botao secundario" data-abrir="creditos">Créditos</button>
+    </nav>
+
+    <!-- Tela de configurações -->
+    <section id="configuracoes" class="painel" hidden>
+      <h2>Configurações</h2>
+
+      <label class="campo">
+        <span>Som</span>
+        <input type="checkbox" id="cfg-som">
+      </label>
+
+      <label class="campo">
+        <span>Velocidade da sequência</span>
+        <select id="cfg-velocidade">
+          <option value="lenta">Lenta</option>
+          <option value="normal">Normal</option>
+          <option value="rapida">Rápida</option>
+        </select>
+      </label>
+
+      <!-- Adicione novas configurações aqui, no mesmo formato de "campo" -->
+
+      <button class="botao secundario" data-voltar>Voltar</button>
+    </section>
+
+    <!-- Tela de créditos -->
+    <section id="creditos" class="painel" hidden>
+      <h2>Créditos</h2>
+
+      <!-- Adicione os créditos aqui -->
+      <p class="aviso">Os créditos serão adicionados em breve.</p>
+
+      <button class="botao secundario" data-voltar>Voltar</button>
+    </section>
+  </main>
+
+  <script src="menu.js"></script>
+</body>
+</html>
